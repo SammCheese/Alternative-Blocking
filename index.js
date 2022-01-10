@@ -14,11 +14,11 @@ module.exports = class alternativeBlocking extends Plugin {
     var blocked = this.settings.get("blockedUsers", "000000000000000000")
     var res = [];
     blocked.map((user) => {
-      var css = `[data-author-id="${user.id}"] .markup-2BOw-j.messageContent-2qWWxC{
+      var css = `[data-author-id="${user.id}"] .markup-eYLPri.messageContent-2t3eCI{
         visibility: hidden;
       }
     
-      [data-author-id="${user.id}"] .markup-2BOw-j.messageContent-2qWWxC:before{
+      [data-author-id="${user.id}"] .markup-eYLPri.messageContent-2t3eCI:before{
         visibility: visible;
         content: "${user.content}";
       }\n`
